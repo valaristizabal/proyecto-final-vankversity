@@ -30,3 +30,6 @@ toggleModeBtn.addEventListener("click", () => {
         toggleModeBtn.textContent = "🌙 Modo Nocturno";
     }
 });
+
+
+

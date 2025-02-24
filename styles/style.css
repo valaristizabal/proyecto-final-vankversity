@@ -4,27 +4,99 @@ body {
     color: black;
     text-align: center;
     transition: 0.3s;
+
+    /* Centrar horizontal y verticalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    margin: 0; /* Eliminar márgenes */
 }
 
 .container {
-    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    background-color: #FFEE02;
 }
 
-/*en el modo oscuro*/
-
-.dark-mode {
-    background-color: black;
-    color: white;
-}
-
-button {
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #F4F4F4;
+    border-radius: 20px; /* Reducción del radio */
+    padding-left: 15px; /* Ajuste del padding */
+    width: 250px;
+    height: 40px; /* Menos alto */
     margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Estilo del input */
+.input-container input {
+    border: none;
+    outline: none;
+    border-radius: 20px; /* Reducción del radio */
+    background-color: transparent;
+    font-size: 14px; /* Letra un poco más pequeña */
+    height: 100%; /* Ajuste a la altura del contenedor */
+}
+
+/* Icono circular */
+.icon {
+    position: absolute;
+    left: 5px;
+    width: 30px; /* Icono más pequeño */
+    height: 30px; /* Ajuste a menor tamaño */
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo del icono dentro del botón */
+.icon img {
+    width: 15px; /* Icono más pequeño */
+    height: 15px;
+}
+
+
+/* Estilo del icono de contraseña*/
+.contrasena-container .icon i {
+    color: white;  /* Hace que el icono sea blanco */
+    font-size: 15px;
+}
+
+/* Espaciado entre los elementos */
+input, button, a {
+    margin: 10px;
     padding: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+/* Estilo para el botón */
+button {
+    background-color: #3c3c3b;
+    color: white;
     border: none;
     cursor: pointer;
+    border-radius: 20px;
 }
 
-#toggleMode {
-    background-color: gray;
-    color: white;
+button:hover {
+    background-color: #272727;
+}
+
+a{
+    color: #272727;
 }
