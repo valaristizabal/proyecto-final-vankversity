@@ -1,0 +1,178 @@
+/* Reset básico */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4F4F4;
+    color: black;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.contenedor {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Sidebar a la izquierda (Dashboard) */
+.parte-izquierda {
+    width: 250px; /* Ancho del sidebar */
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px;
+    position: fixed; /* Para que siempre quede fijo */
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+/* Perfil */
+
+.perfil {
+    padding: 20px;
+    justify-items: center;
+}
+.perfil img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.perfil h1 {
+    font-size: 20px;
+    margin: 0;
+    color: white;
+}
+
+/* divisor*/
+hr{
+    width: 200px;
+}
+
+/*botones dashboard*/
+
+/* Opciones del dashboard */
+.opciones {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opcion {
+    width: 90%;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.opcion a {
+    font-size: 18px;
+}
+
+/* Cambio de color al pasar el mouse */
+.opcion:hover {
+    background-color: #FFEE02;
+    color: black;
+}
+
+/* Parte derecha (Contenido principal) */
+.parte-derecha {
+    flex: 1;
+    margin-left: 250px; /* Para que no se monte con el sidebar */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.novedades{
+    width: 90%;
+    height: 50px;
+    background-color: #3c3c3b;
+    border-radius: 15px;
+}
+
+.titulo-parte-derecha {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between; /* Separa los elementos */
+    align-items: center; /* Alinea verticalmente */
+}
+
+/* Botón estilizado */
+.btn-agregar {
+    background-color: #3c3c3b;
+    color: white;
+    border: none;
+    margin-right: 120px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-agregar:hover {
+    background-color: #272727;
+}
+
+.cuentas{
+    padding: 5px;
+    width: 40%;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #FFEE02;
+}
+
+.servicios-destacados {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.servicios-destacados h2 {
+    margin-bottom: 10px;
+}
+
+/* Contenedor para Wallet y Certificados en la misma fila */
+.servicios-items {
+    display: flex;
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+.wallet, .certificados {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos en la columna */
+    text-align: center;
+}
+
+.servicios-destacados a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    color: black;
+    background-color: #FFEE02;
+    text-decoration: none;
+}
+
+.servicios-destacados a i {
+    font-size: 24px;
+}
+
+.wallet p, .certificados p {
+    margin: 5px 0 0 0;
+    font-size: 16px;
+}
